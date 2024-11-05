@@ -29,11 +29,15 @@ const Navbar = () => {
     <nav
       className={`${
         isScrolled ? `bg-white text-gray-800` : `bg-transparent text-white`
-      } w-[80%] md:w-full flex  fixed mt-[-20px] z-50 transition-all duration-300 pr-5`}
+      }  w-full flex  fixed mt-[-20px] z-50 transition-all duration-300 md:pr-5 p-3`}
     >
-      <div className="container mx-8 flex justify-between items-center">
+      <div className="container md:mx-8 flex justify-between items-center mb-[-20px]">
         <div>
-          <img src={logo} className="h-[130px]" alt="Logo" />
+          <img
+            src={logo}
+            className="h-[100px] md:h-[130px] ml-[-8px]"
+            alt="Logo"
+          />
         </div>
         <div className="hidden md:flex">
           <ul className="ml-3 flex space-x-6">
@@ -74,7 +78,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button onClick={toggleSidebar} className="md:hidden text-white">
+        <button
+          onClick={toggleSidebar}
+          className={`md:hidden ${isScrolled ? `text-black` : ` text-white`}`}
+        >
           {isSidebarOpen ? "Close" : <FaHamburger />}
         </button>
         <div className="hidden md:flex">

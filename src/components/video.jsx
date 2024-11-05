@@ -10,13 +10,13 @@ const VideoComponent = () => {
         autoPlay
         loop
         muted
-        className="w-full h-[100vh] md:h-[90vh] object-cover mt-[-200px] md:mt-[-70px]"
-      ></video>
-
-      <div className="absolute inset-0 flex flex-col items-center   space-y-4">
+        preload="auto"
+        className="w-full h-[120vh] md:h-[90vh] object-cover mt-[-200px] md:mt-[-70px] filter brightness-50 contrast-100 z-100"
+      />
+      <div className="absolute inset-0 flex flex-col items-center space-y-4">
         <Navbar />
         <div className="flex flex-col items-center pt-[220px] gap-2">
-          <h1 className="text-white text-4xl md:text-3xl font-semibold drop-shadow-lg">
+          <h1 className="text-white text-center text-2xl md:text-3xl font-semibold drop-shadow-lg">
             Where Creativity Meets Collaboration?
           </h1>
           <h1
@@ -29,12 +29,12 @@ const VideoComponent = () => {
           >
             Yale School of Art
           </h1>
-          <p className="text-white mt-[10px]">
+          <p className="text-white mt-[10px] text-center">
             Yale School of Art 1156 Chapel Street, POB 208339 New Haven,
             Connecticut, 06520-8339
           </p>
         </div>
-        <div className="md:flex hidden  w-full md:justify-center md:items-center">
+        <div className="md:flex hidden w-full md:justify-center md:items-center">
           <Box />
         </div>
       </div>

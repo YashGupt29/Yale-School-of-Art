@@ -4,7 +4,7 @@ import { MdLocationCity } from "react-icons/md";
 
 const Box = () => {
   return (
-    <div className="md:flex  w-full flex-col md:flex-row md:justify-between md:w-10/12 md:gap-3 font-serif  ">
+    <div className="md:flex   w-full flex-col md:flex-row md:justify-between md:w-10/12 md:gap-3 font-serif  ">
       <div className="bg-[#d89c0c] w-[22%] h-[200px] flex items-center justify-center text-black border border-white mt-[130px] p-5 text-start rounded-md">
         <p className="text-white text-3xl font-bold font-serif">
           Where will your creativity take you?

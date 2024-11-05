@@ -1,7 +1,7 @@
 import student from "../assets/student.png";
 const Welcome = () => {
   return (
-    <div className="flex flex-col items-center justify-center md:flex-row w-f md:w-10/12 md:justify-between md:items-center gap-4 mt-14 p-[50px] ml-20">
+    <div className="flex flex-col items-center justify-center md:flex-row  md:w-10/12 md:justify-between md:items-center gap-4 mt-14 p-[50px] md:ml-20">
       <div>
         <img src={student} className="h-[550px] w-[400px] hidden md:flex" />
       </div>
@@ -11,7 +11,7 @@ const Welcome = () => {
           <hr className="flex-grow border-t-2 border-gray-200" />
         </div>
 
-        <div className="flex md:flex-row flex-col md:gap-10">
+        <div className="flex md:flex-row flex-col gap-4 md:gap-10">
           <h1
             className="text-black text-2xl md:text-6xl font-bold drop-shadow-lg font-serif"
             style={{
