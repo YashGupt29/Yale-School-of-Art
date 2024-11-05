@@ -10,7 +10,20 @@ function App() {
       <VideoComponent />
       <Lines />
       <Welcome />
-      <Calendar />
+      <div className="space-y-10 py-9 md:pl-[150px] w-full mt-5">
+        <h1
+          className="text-black text-2xl md:text-4xl font-bold drop-shadow-lg font-serif"
+          style={{
+            color: "black",
+            WebkitTextStroke: "1px #fbbf24",
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+          }}
+        >
+          <span className="md:text-6xl">C</span>
+          ALENDAR
+        </h1>
+        <Calendar />
+      </div>
     </div>
   );
 }

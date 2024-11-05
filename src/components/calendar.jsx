@@ -3,7 +3,7 @@ import CalendarHeader from "./calendar/calendarHeader";
 
 const Calendar = () => {
   return (
-    <div className="bg-[#d89c0c] w-1/2">
+    <div className="bg-[#d89c0c] w-[40%] rounded-xl">
       <CalendarHeader />
       <CalendarBody />
     </div>
