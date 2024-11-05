@@ -12,7 +12,7 @@ const NewsLetter = () => {
     const handleScroll = () => {
       const rect = ref.current.getBoundingClientRect();
       const isInView =
-        rect.top < window.innerHeight + 180 && rect.bottom >= -100;
+        rect.top < window.innerHeight + 500 && rect.bottom >= -100;
       setIsVisible(isInView);
       if (isInView) {
         setTimeout(() => {
@@ -36,7 +36,7 @@ const NewsLetter = () => {
   }, []);
 
   return (
-    <div className="bg-[#d89c0c] w-[40%] p-4 rounded-md space-y-6">
+    <div className="bg-[#d89c0c] md:w-[40%] p-4 rounded-md space-y-6">
       <div
         className={`bg-gray-100 p-4 rounded-md transition-transform duration-500 ${
           isVisible ? "slide-up" : "slide-in"

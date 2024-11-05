@@ -6,8 +6,8 @@ import { BiAccessibility } from "react-icons/bi";
 import { TiSocialInstagram } from "react-icons/ti";
 const Footer = () => {
   return (
-    <div className="bg-[#d89c0c] mt-10 p-10 flex justify-between">
-      <div className="flex flex-col w-1/4 text-white font-semibold gap-6 text-start">
+    <div className="bg-[#d89c0c] mt-10 p-10 flex flex-col gap-10 md:gap-0 md:flex-row md:justify-between">
+      <div className="flex flex-col md:w-1/4 text-white font-semibold gap-6 text-start">
         <div className="flex items-center gap-2">
           <div className="w-16 h-16 overflow-hidden rounded-full">
             <img src={logo} alt="Logo" className="w-full h-full object-cover" />
@@ -70,7 +70,7 @@ const Footer = () => {
           Accessibility at Yale
         </p>
       </div>
-      <div className="flex flex-col p-4 w-[32%]">
+      <div className="flex flex-col p-4 md:w-[32%]">
         <h2 className="text-white text-2xl mb-4 font-bold font-serif">
           Newsletter Signup
         </h2>

@@ -4,14 +4,15 @@ import Navbar from "./navbar/navbar";
 
 const VideoComponent = () => {
   return (
-    <div className="relative flex items-center justify-center h-screen mb-32">
+    <div className="relative flex items-center justify-center md:h-screen mb-32">
       <video
         src={video}
         autoPlay
         loop
         muted
-        className="w-full h-[90vh] object-cover mt-[-70px]"
+        className="w-full h-[100vh] md:h-[90vh] object-cover mt-[-200px] md:mt-[-70px]"
       ></video>
+
       <div className="absolute inset-0 flex flex-col items-center   space-y-4">
         <Navbar />
         <div className="flex flex-col items-center pt-[220px] gap-2">
@@ -33,7 +34,9 @@ const VideoComponent = () => {
             Connecticut, 06520-8339
           </p>
         </div>
-        <Box />
+        <div className="md:flex hidden  w-full md:justify-center md:items-center">
+          <Box />
+        </div>
       </div>
     </div>
   );

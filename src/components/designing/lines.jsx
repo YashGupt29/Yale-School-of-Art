@@ -37,10 +37,7 @@ const Lines = () => {
   }, []);
 
   return (
-    <div
-      id="lines-container"
-      className="space-y-6 flex flex-col justify-between"
-    >
+    <div id="lines-container" className="space-y-6 flex flex-col">
       <div className="flex flex-col gap-5">
         <motion.div
           className="bg-[#d89c0c] h-10 w-1/6 rounded-r-3xl"
@@ -56,7 +53,7 @@ const Lines = () => {
         />
       </div>
       <motion.div
-        className="bg-[#d89c0c] h-10 w-10/12 rounded-l-3xl relative left-[260px]"
+        className="bg-[#d89c0c] h-10 w-10/12 rounded-l-3xl  md:ml-[260px]"
         initial={{ scaleY: 0, x: 50 }}
         animate={{ scaleY: inView ? 1 : 0, x: inView ? 0 : 100 }}
         transition={{ duration: 0.5, delay: 0.2 }}

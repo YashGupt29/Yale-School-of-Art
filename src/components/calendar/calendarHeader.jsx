@@ -16,7 +16,7 @@ const CalendarHeader = () => {
         </button>
       </div>
       <div className="flex gap-3">
-        <button className="bg-white py-2 px-4 rounded-lg text-[#343434]">
+        <button className="bg-white py-2 px-4 rounded-lg text-[#343434] hidden md:flex">
           Subscribe
         </button>
         <button className="bg-white py-2 px-4 rounded-lg">
@@ -28,7 +28,7 @@ const CalendarHeader = () => {
         <button className="bg-white py-2 px-4 rounded-lg">
           <SiWindows fill="gray" />
         </button>
-        <div className="flex gap-1">
+        <div className="md:flex hidden gap-1">
           <button className="flex items-center justify-center bg-white py-2 px-5 rounded-lg">
             <FaFilter fill="gray" />
             Filter

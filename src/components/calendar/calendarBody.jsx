@@ -10,7 +10,7 @@ const CalendarBody = () => {
         <div className="flex justify-between">
           <button className="bg-gray-100 pr-3 text-gray-400 rounded-md flex items-center justify-center">
             <MdOutlineArrowLeft
-              className="text-4xl mt-[2px] mr-[-8px]"
+              className="md:text-4xl mt-[2px] mr-[-8px]"
               fill="gray"
             />
             Previous Events
