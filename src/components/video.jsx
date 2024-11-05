@@ -4,7 +4,7 @@ import Navbar from "./navbar/navbar";
 
 const VideoComponent = () => {
   return (
-    <div className="relative flex items-center justify-center min-h-screen md:mb-32">
+    <div className="relative flex items-center justify-center min-h-screen md:mb-32 mb-10">
       <video
         src={video}
         autoPlay
@@ -34,7 +34,7 @@ const VideoComponent = () => {
             Connecticut, 06520-8339
           </p>
         </div>
-        <div className="bg-white top-[30px] sm:top-[100px] h-[200px] w-[100vw] relative md:hidden"></div>
+        <div className="bg-white top-[190px] h-[140px] z-[40] sm:top-[100px] sm:h-[200px] w-[100vw] relative md:hidden"></div>
         <div className="md:flex hidden w-full md:justify-center md:items-center">
           <Box />
         </div>
