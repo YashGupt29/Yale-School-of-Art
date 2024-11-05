@@ -99,7 +99,7 @@ const NewsLetter = () => {
       </div>
       <div
         className={`bg-gray-50 p-2 rounded-lg text-center space-y-4 transition-transform duration-500 ${
-          isVisible ? "slide-up" : ""
+          isVisible ? "slide-up" : "slide-in"
         }`}
         ref={ref}
       >

@@ -2,13 +2,14 @@ import "./App.css";
 import Calendar from "./components/calendar";
 import Body from "./components/community/body";
 import Lines from "./components/designing/lines";
+import Footer from "./components/footer";
 import NewsLetter from "./components/newletter/newletter";
 import VideoComponent from "./components/video";
 import Welcome from "./components/welcome";
 
 function App() {
   return (
-    <div className="mb-[1000px]">
+    <div>
       <VideoComponent />
       <Lines />
       <Welcome />
@@ -35,6 +36,7 @@ function App() {
         </div>
       </div>
       <Body />
+      <Footer />
     </div>
   );
 }
