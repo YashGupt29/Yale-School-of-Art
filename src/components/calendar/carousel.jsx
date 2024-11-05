@@ -9,7 +9,7 @@ const CalendarCarousel = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     pauseOnHover: true,
     vertical: true,
     arrows: false,
@@ -20,7 +20,7 @@ const CalendarCarousel = () => {
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 2 },
+        settings: { slidesToShow: 1 },
       },
     ],
   };

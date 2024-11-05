@@ -24,7 +24,7 @@ function App() {
               textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <div>
+            <div className="flex flex-col md:flex-row items-center justify-center">
               <div>
                 <span className="text-4xl md:text-6xl">C</span>
                 ALENDAR

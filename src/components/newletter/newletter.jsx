@@ -13,28 +13,27 @@ const NewsLetter = () => {
       const rect = ref.current.getBoundingClientRect();
       const isInView =
         rect.top < window.innerHeight + 500 && rect.bottom >= -100;
-      setIsVisible(isInView);
-      if (isInView) {
-        setTimeout(() => {
-          setIsSecondVisible(true);
-          setTimeout(() => {
-            setIsThirdVisible(true);
-            setTimeout(() => {
-              setIsFourthVisible(true);
-              setTimeout(() => {
-                setIsFifthVisible(true);
-              }, 500);
-            }, 500);
-          }, 500);
-        }, 500);
+
+      if (isInView && !isVisible) {
+        setIsVisible(true);
+        setTimeout(() => setIsSecondVisible(true), 500);
+        setTimeout(() => setIsThirdVisible(true), 1000);
+        setTimeout(() => setIsFourthVisible(true), 1500);
+        setTimeout(() => setIsFifthVisible(true), 2000);
+      } else if (!isInView && isVisible) {
+        setIsVisible(false);
+        setIsSecondVisible(false);
+        setIsThirdVisible(false);
+        setIsFourthVisible(false);
+        setIsFifthVisible(false);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isVisible]);
   return (
     <div className="bg-[#d89c0c] md:w-[40%] p-4 rounded-md space-y-6">
       <div

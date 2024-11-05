@@ -37,23 +37,23 @@ const Lines = () => {
   }, []);
 
   return (
-    <div id="lines-container" className="space-y-6 flex flex-col">
-      <div className="flex flex-col gap-5">
+    <div id="lines-container" className="space-y-6 flex gap-[130px]">
+      <div className="flex flex-col gap-5 w-full">
         <motion.div
-          className="bg-[#d89c0c] h-10 w-1/6 rounded-r-3xl"
+          className="bg-[#d89c0c] h-10 w-[80%] rounded-r-3xl"
           initial={{ scaleY: 0, x: -50 }}
           animate={{ scaleY: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{ duration: 1 }}
         />
         <motion.div
-          className="bg-[#d89c0c] h-10 w-1/3 rounded-r-3xl"
+          className="bg-[#d89c0c] h-10 w-[100%] rounded-r-3xl"
           initial={{ scaleY: 0, x: -50 }}
           animate={{ scaleY: inView ? 1 : 0, x: inView ? 0 : -100 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         />
       </div>
       <motion.div
-        className="bg-[#d89c0c] h-10 w-10/12 rounded-l-3xl  md:ml-[260px]"
+        className="bg-[#d89c0c] h-10 w-[100%] md:w-[100%] rounded-l-3xl"
         initial={{ scaleY: 0, x: 50 }}
         animate={{ scaleY: inView ? 1 : 0, x: inView ? 0 : 100 }}
         transition={{ duration: 0.5, delay: 0.1 }}
