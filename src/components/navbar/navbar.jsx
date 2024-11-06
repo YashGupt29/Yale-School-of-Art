@@ -5,6 +5,15 @@ import darkLogo from "../../assets/darkLogo.png";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [hoveredLink, setHoveredLink] = useState(null);
+
+  const handleMouseEnter = (text) => {
+    setHoveredLink(text);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredLink(null);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -93,7 +102,7 @@ const Navbar = () => {
           {isSidebarOpen ? "Close" : <FaHamburger />}
         </button>
         <div className="hidden md:flex">
-          <button className="bg-yellow-400 text-white px-10 py-2 rounded-l-full">
+          <button className="bg-[#d89c0c] text-white px-10 py-2 rounded-l-full hover:bg-yellow-100 hover:text-amber-600">
             Quick Links
           </button>
           <button className="text-white bg-black px-10 py-2 rounded-r-full">
