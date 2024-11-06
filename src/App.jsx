@@ -36,7 +36,7 @@ function App() {
               </div>
             </div>
           </h1>
-          <div className="flex flex-col gap-4  md:flex-row justify-between px-[10%]">
+          <div className="flex flex-col gap-4  md:flex-row justify-between px-[10%]  p-10">
             <Calendar />
             <NewsLetter />
           </div>

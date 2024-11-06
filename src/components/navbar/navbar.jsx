@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logo from "../../assets/logoLight.png";
 import { FaHamburger } from "react-icons/fa";
-
+import darkLogo from "../../assets/darkLogo.png";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -33,11 +33,19 @@ const Navbar = () => {
     >
       <div className="container md:mx-8 flex justify-between items-center mb-[-20px]">
         <div>
-          <img
-            src={logo}
-            className="h-[100px] md:h-[130px] ml-[-8px]"
-            alt="Logo"
-          />
+          {isScrolled ? (
+            <img
+              src={darkLogo}
+              className="pb-2 h-[100px] w-[100px] md:h-[110px] md:w-[80px] ml-[-8px] rounded-full object-cover"
+              alt="Logo"
+            />
+          ) : (
+            <img
+              src={logo}
+              className="h-[100px] md:h-[130px] ml-[-8px]"
+              alt="Logo"
+            />
+          )}
         </div>
         <div className="hidden md:flex">
           <ul className="ml-3 flex space-x-6">
