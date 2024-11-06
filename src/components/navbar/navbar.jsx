@@ -105,7 +105,7 @@ const Navbar = () => {
           <button className="bg-[#d89c0c] text-white px-10 py-2 rounded-l-full hover:bg-yellow-100 hover:text-amber-600">
             Quick Links
           </button>
-          <button className="text-white bg-black px-10 py-2 rounded-r-full">
+          <button className="text-white bg-black px-10 py-2 rounded-r-full hover:bg-stone-400 hover:text-black ">
             Contact Us
           </button>
         </div>

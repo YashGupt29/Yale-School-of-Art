@@ -15,7 +15,7 @@ const SoaCarousel = () => {
   };
 
   return (
-    <div className="p-10 bg-[#504c4c] w-full md:h-[460px] md:w-[500px] md:pt-14 px-14">
+    <div className="p-10 bg-[#504c4c] w-full md:h-[460px] md:w-[600px] md:pt-14 md:px-14 rounded-md">
       <div>
         <Slider {...settings}>
           <SoaContent />
